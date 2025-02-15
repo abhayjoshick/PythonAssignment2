@@ -126,9 +126,9 @@ unused_lambda = get_unused_lambda_functions()
 unused_s3 = get_unused_s3_buckets()
 
 # Print Summary Report
-print("\n🔹 AWS Cost Optimization Report 🔹\n")
+print("\n AWS Cost Optimization Report \n")
 
-print("✅ Underutilized EC2 Instances (Low CPU <10%):", low_ec2 or "None")
-print("✅ Idle RDS Instances (No connections in 7 days):", idle_rds or "None")
-print("✅ Unused Lambda Functions (No invocations in 30 days):", unused_lambda or "None")
-print("✅ Unused S3 Buckets (Empty or No recent access):", unused_s3 or "None")
+print("Underutilized EC2 Instances (Low CPU <10%):", low_ec2 or "None")
+print("Idle RDS Instances (No connections in 7 days):", idle_rds or "None")
+print("Unused Lambda Functions (No invocations in 30 days):", unused_lambda or "None")
+print("Unused S3 Buckets (Empty or No recent access):", unused_s3 or "None")
